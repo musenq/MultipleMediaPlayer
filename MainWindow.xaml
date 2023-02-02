@@ -1,0 +1,18 @@
+﻿<Window x:Class="MultipleMediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultipleMediaPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="133" Width="474" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="AddWindowButton" Content="Add Window" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Click="AddWindowButton_Click" IsEnabled="False" Width="105"/>
+        <Button x:Name="PlayButton" Content="▶" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Click="PlayButton_Click" IsEnabled="False" Width="105"/>
+        <Button x:Name="BrowseBotton" Content="Browse..." HorizontalAlignment="Right" Margin="0,35,10,0" VerticalAlignment="Top" Width="65" Click="BrowseBotton_Click"/>
+        <TextBox x:Name="URITextBox" Margin="10,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" IsEnabled="False"/>
+        <Button x:Name="StopButton" Content="■" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.091,-0.553" Click="stopButton_Click" IsEnabled="False" Width="105"/>
+        <Slider x:Name="MediaVolume" Margin="275,62,10,0" VerticalAlignment="Top" Width="130" ValueChanged="MediaVolume_ValueChanged" IsEnabled="False" Maximum="1" HorizontalAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,63,145,0" TextWrapping="Wrap" Text="Volume" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

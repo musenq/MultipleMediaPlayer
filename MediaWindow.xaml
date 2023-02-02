@@ -1,0 +1,15 @@
+﻿<Window x:Class="MultipleMediaPlayer.MediaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultipleMediaPlayer"
+        mc:Ignorable="d"
+        Title="MediaWindow" Height="450" Width="800" Loaded="Window_Loaded" Background="{x:Null}">
+    <Grid>
+        <ContentControl x:Name="doubleClickControl" MouseDoubleClick="doubleClickControl_MouseDoubleClick">
+            <MediaElement x:Name="mediaElement" MediaEnded="mediaElement_MediaEnded"/>
+        </ContentControl>
+
+    </Grid>
+</Window>
